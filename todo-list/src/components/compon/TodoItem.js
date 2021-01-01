@@ -11,6 +11,10 @@ export class TodoItem extends Component {
         }
     }
 
+    componentDidMount = (props) => {
+        console.log(this.props.todo)
+    }
+
 
     render() {
         const { id, title } = this.props.todo
@@ -28,7 +32,9 @@ export class TodoItem extends Component {
 }
 
 TodoItem.propTypes = {
-    todos: PropTypes.object.isRequired
+    todos: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    delTodo: PropTypes.func.isRequired
 }
 
 const btnStyle = {
