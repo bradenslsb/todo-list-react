@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from"prop-types"
+import PropTypes from "prop-types"
 
 export class AddTodo extends Component {
     state = {
@@ -22,7 +22,7 @@ export class AddTodo extends Component {
                     type="text" 
                     name="title" 
                     style={{flex: "10", padding: "5px"}}
-                    placeholder="Add todo.." 
+                    placeholder="Add todo ..." 
                     value={this.state.title}
                     onChange={this.onChange}
                 />
